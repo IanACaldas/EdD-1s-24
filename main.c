@@ -33,7 +33,8 @@
 
         FILE* arq_saida = fopen("saida.txt", "w");
         if(arq_saida == NULL){
-            printf("ERRO ao abrir arquivo %")
+            printf("ERRO ao abrir arquivo");
+            exit(1);
         }
 
         for(i = 0; i < qtd_n; i++){
