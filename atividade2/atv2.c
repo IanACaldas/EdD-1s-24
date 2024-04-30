@@ -3,9 +3,28 @@
 
     int main (int argc, char* argv[]) {
 
-        if(int i; argv[i] == 0){
+
+// atoi = transformar string em um inteiro (argv[1] passa de uma string pra um numero inteiro "N")
+        int n = atoi(argv[1]);
+
+        if(n <= 1){
             printf("//false");
+            exit(0);
         }
 
+        if((n != 2) && (n % 2 == 0)){
+            printf("//false");
+            exit(0);
+        }
+
+        for(int i = 3; i < n; 3 + 2){
+            if(n % i == 0) {
+                printf("//false");
+                exit(0);
+            }
+        }
+
+
+        printf("//true");
         exit(0);
     }
